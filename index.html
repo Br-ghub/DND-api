@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>D&D</h1>
+        <h2 id="name"></h2>
+    </header>
+    <div>
+        <img src="" alt="">
+        <p></p>
+    </div>
+</body>
+<script>
+    const imag = document.querySelector("img");
+    const text = document.querySelector("p");
+    const hea = document.getElementById("name");
+    fetch("https://www.dnd5eapi.co/api/2014/magic-items/adamantine-armor")
+        .then(response =>
+            response.json()
+        ).then(data=>{
+            console.log(data);
+            console.log(data["image"]);
+            console.log(data["desc"]);
+            imag.src="https://www.dnd5eapi.co" + data["image"];
+            text.innerText=data["desc"];
+            hea.innerText=data["name"];
+        })
+</script>
+</html>
