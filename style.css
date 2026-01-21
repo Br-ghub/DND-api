@@ -1,20 +1,34 @@
-header{
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 5px;
+.cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-div{
-    border: 1px solid black;
-    border-radius: 10px;
+.card{
+    text-align: center;
+    border: 1px black solid;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
     margin: 5px;
-    padding: 5px;
+}
+
+.imgdiv{
     text-align: center;
 }
 
-img{
-    width:33.33333333svw;
+.img{
+    width: 100%;
+}
+
+.desc{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.p{
+    font-size: 5em;
+}
+
+body{
+    display: flex;
+    justify-content: center;
 }
