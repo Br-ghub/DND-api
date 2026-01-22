@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+    <title>Magic Items</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 </body>
 <script>
     const cards = document.getElementById("cards")
-    fetch("https://www.dnd5eapi.co/api/2014/skills")
+    fetch("https://www.dnd5eapi.co/api/2014/magic-items")
         .then(response =>
             response.json()
         ).then(data =>{

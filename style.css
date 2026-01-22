@@ -1,5 +1,6 @@
 .cards{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -26,7 +27,7 @@
 
 .p{
     font-family: "Comic Sans MS";
-    font-size: 5em;
+    font-size: 3em;
 }
 
 a{
