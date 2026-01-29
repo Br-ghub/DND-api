@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="title">
+        Skills
+    </div>
     <div class="cards" id="cards">
 
     </div>
@@ -24,6 +27,18 @@
                 card.classList.add("card")
                 card.classList.add("p")
                 cards.append(card)
+
+                card.addEventListener("click", ()=>{
+                    /*
+                    remove all current cards from page
+                    get information of whatever was clicked
+                    make new header and add information in text underneath
+                    */
+                    const cards = document.querySelectorAll(".card")
+                    cards.forEach(element => {
+                        
+                    });
+                })
             });
         })
 </script>
