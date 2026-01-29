@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+    <title>Magic Items</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="title">
-        Skills
-    </div>
     <div class="cards" id="cards">
 
     </div>
 </body>
 <script>
     const cards = document.getElementById("cards")
-    fetch("https://www.dnd5eapi.co/api/2014/skills")
+    fetch("https://www.dnd5eapi.co/api/2014/magic-items")
         .then(response =>
             response.json()
         ).then(data =>{
@@ -27,18 +24,6 @@
                 card.classList.add("card")
                 card.classList.add("p")
                 cards.append(card)
-
-                card.addEventListener("click", ()=>{
-                    /*
-                    remove all current cards from page
-                    get information of whatever was clicked
-                    make new header and add information in text underneath
-                    */
-                    const cards = document.querySelectorAll(".card")
-                    cards.forEach(element => {
-                        
-                    });
-                })
             });
         })
 </script>

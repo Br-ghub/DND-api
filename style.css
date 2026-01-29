@@ -27,8 +27,12 @@
 }
 
 .p{
-    font-size: 5em;
     font-family: "Comic Sans MS";
+    font-size: 3em;
+}
+
+a{
+    text-decoration: none;
 }
 
 body{
