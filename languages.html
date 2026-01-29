@@ -8,23 +8,6 @@
 </head>
 <body>
     <div class="cards" id="cards">
-
     </div>
 </body>
-<script>
-    const cards = document.getElementById("cards")
-    fetch("https://www.dnd5eapi.co/api/2014/languages")
-        .then(response =>
-            response.json()
-        ).then(data =>{
-            data.results.forEach(element => {
-                let card = document.createElement("a") //please don't cause 3000 errors...
-                card.href = `${element.name}.html`
-                card.innerHTML = element.name
-                card.classList.add("card")
-                card.classList.add("p")
-                cards.append(card)
-            });
-        })
-</script>
 </html>
