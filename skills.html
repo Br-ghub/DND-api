@@ -7,39 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="title">
-        Skills
-    </div>
-    <div class="cards" id="cards">
-
+    <header>
+        <h1>Skills</h1>
+    </header>
+    <div id="cards" class="cards">
     </div>
 </body>
-<script>
-    const cards = document.getElementById("cards")
-    fetch("https://www.dnd5eapi.co/api/2014/skills")
-        .then(response =>
-            response.json()
-        ).then(data =>{
-            data.results.forEach(element => {
-                let card = document.createElement("a") //please don't cause 3000 errors...
-                card.href = `${element.name}.html`
-                card.innerHTML = element.name
-                card.classList.add("card")
-                card.classList.add("p")
-                cards.append(card)
-
-                card.addEventListener("click", ()=>{
-                    /*
-                    remove all current cards from page
-                    get information of whatever was clicked
-                    make new header and add information in text underneath
-                    */
-                    const cards = document.querySelectorAll(".card")
-                    cards.forEach(element => {
-                        
-                    });
-                })
-            });
-        })
-</script>
+<script src="scriptSkills.js"></script>
 </html>
